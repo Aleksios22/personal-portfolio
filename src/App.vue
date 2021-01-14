@@ -1,6 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-Premier commit  <HelloWorld msg="Hello comment cela va?!?!?!" />
+<HelloWorld msg="Hello comment cela va?!?!?!" />
 </template>
 
 <script setup>

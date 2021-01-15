@@ -1,19 +1,35 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-<HelloWorld msg="Hello comment cela va?!?!?!" />
+  <h1>bonjour, allo</h1>
+  <main>
+    <MonArticle/>
+    <MonArticle/>
+    <MonAside/>
+    <MonAside/>
+    <MonAside/>
+    <MonAside/>
+  </main>
 </template>
 
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+import MonArticle from "./components/MonArticle.vue";
+import MonAside from "./components/MonAside.vue";
+
+export default {
+
+  components : {
+    MonArticle,
+    MonAside
+  }
+
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
 }
 </style>

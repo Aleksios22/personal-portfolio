@@ -1,31 +1,23 @@
 <template>
-  <h1>bonjour, allo</h1>
   <main>
-    <MonArticle/>
-    <MonArticle/>
-    <MonAside/>
-    <MonAside/>
-    <MonAside/>
-    <MonAside/>
+    <h1>En construction ...</h1>
   </main>
 </template>
 
 <script>
-import MonArticle from "./components/MonArticle.vue";
-import MonAside from "./components/MonAside.vue";
-
 export default {
 
-  components : {
-    MonArticle,
-    MonAside
-  }
 
 };
 </script>
 
-<style>
-body {
+<style lang="scss">
+      @font-face {
+    font-family: 'Nimbus Mono bold';
+    src: local('Nimbus Mono bold'), url('./assets/Fonts/nimbus-mono/nimbusmono-bold.otf')  format('truetype'),
+  }
+#app{
+  font-family: Avenir, 'Nimbus Mono bold';
   display: flex;
   justify-content: center;
   align-items: center;

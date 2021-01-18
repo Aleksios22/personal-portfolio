@@ -17,7 +17,7 @@ export default {
     src: local('Nimbus Mono bold'), url('./assets/Fonts/nimbus-mono/nimbusmono-bold.otf')  format('truetype'),
   }
 #app{
-  font-family: Avenir, 'Nimbus Mono bold';
+  font-family: 'Nimbus Mono bold';
   display: flex;
   justify-content: center;
   align-items: center;

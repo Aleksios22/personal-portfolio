@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1>En Construction ...</h1>
+    <h1>En  ...</h1>
   </main>
 </template>
 

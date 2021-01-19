@@ -21,7 +21,7 @@ export default {
   width: 100vw;
   height: 100vh;
 
-  background: #FEF7CB;
+  background: #fff8c7;
   display: flex;
   justify-content: center;
   align-items: center;

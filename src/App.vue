@@ -16,16 +16,12 @@ export default {
 
 
 <style lang="scss">
-  //     @font-face {
-  //   font-family: 'Nimbus Mono bold';
-  //   src: local('Nimbus Mono bold'), url('./assets/Fonts/nimbus-mono/nimbusmono-bold.otf')  format('truetype'),
-  // }
+
 #app{
   width: 100vw;
   height: 100vh;
 
   background: #FEF7CB;
-  // font-family: 'Nimbus Mono bold';
   display: flex;
   justify-content: center;
   align-items: center;

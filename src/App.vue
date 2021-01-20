@@ -40,8 +40,8 @@ body {
   main {
     text-align: center;
     h1 {
-      font-family: nimbusBold;
-      font-size: 1.8rem;
+      font-family: "nimbusBold";
+      font-size: 1.6rem;
     }
     h2 {
       font-size: 0.9rem;
@@ -55,12 +55,11 @@ body {
 }
 }
 // --------------TABLETTE---------------
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 640px) {
   body {
     #app {
       main {
             h1 {
-      font-family: nimbusBold;
       font-size: 2.2rem;
     }
     h2 {
@@ -68,6 +67,23 @@ body {
       a {
         font-size: 1.8rem;
       }
+    }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1008px) {
+  body {
+    #app {
+      main {
+        h1 {
+          font-size: 2.6rem;
+        }
+        h2 {
+          font-size: 1.6rem;
+          a {
+            font-size: 2rem;
+          }
     }
       }
     }

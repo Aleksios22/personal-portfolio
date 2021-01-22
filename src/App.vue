@@ -4,6 +4,7 @@
     <h2>
       Portfolio temporaire sur mon
       <a href="https://www.behance.net/alexisrochon1/projects">Behance</a>
+      et sur mon<a href="https://github.com/Aleksios22">Github</a>
     </h2>
   </main>
 </template>

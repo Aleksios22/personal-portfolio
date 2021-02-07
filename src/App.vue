@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="flex flex-col">
     <h1>En construction ...</h1>
     <h2>
       Portfolio temporaire sur mon
@@ -7,6 +7,7 @@
       <br />
       et sur mon <a href="https://github.com/Aleksios22">Github</a>
     </h2>
+    <!-- <img src="./assets/Images/3maquettes.webp" alt="" /> -->
   </main>
 </template>
 

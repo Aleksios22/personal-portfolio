@@ -1,18 +1,20 @@
 <template>
-  <main class="flex flex-col">
-    <h1>En construction ...</h1>
-    <h2>
-      Portfolio temporaire sur mon
-      <a href="https://www.behance.net/alexisrochon1/projects">Behance</a>
-      <br />
-      et sur mon <a href="https://github.com/Aleksios22">Github</a>
-    </h2>
-    <!-- <img src="./assets/Images/3maquettes.webp" alt="" /> -->
+  <main
+    class="flex flex-col bg-white w-screen h-screen justify-center items-center"
+  >
+    <Cadre></Cadre>
   </main>
 </template>
 
 <script>
-export default {};
+import Cadre from "./components/Cadre.vue";
+
+export default {
+  name: "App",
+  components: {
+    Cadre,
+  },
+};
 </script>
 
 <style lang="scss">
@@ -25,9 +27,12 @@ export default {};
   font-family: nimbusBold;
   src: url("./assets/Fonts/nimbus-mono/nimbusmono-bold.otf");
 }
+@font-face {
+  font-family: barlowBold;
+  src: url("./assets/Fonts/Barlow/Barlow-Bold.ttf");
+}
 body {
-  background: #fef7cb;
-  overflow: hidden;
+  background: #ffffff;
   #app {
     width: 100vw;
     height: 100vh;
@@ -71,21 +76,9 @@ body {
     }
   }
 }
+// --------------DESKTOP---------------
 @media screen and (min-width: 1008px) {
   body {
-    #app {
-      main {
-        h1 {
-          font-size: 2.6rem;
-        }
-        h2 {
-          font-size: 1.6rem;
-          a {
-            font-size: 2rem;
-          }
-        }
-      }
-    }
   }
 }
 </style>

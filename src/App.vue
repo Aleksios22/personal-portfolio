@@ -1,18 +1,18 @@
 <template>
-  <main
-    class="flex flex-col bg-white w-screen h-screen justify-center items-center"
-  >
-    <Cadre></Cadre>
-  </main>
+  <!-- <Main /> -->
+  <router-view></router-view>
 </template>
 
 <script>
-import Cadre from "./components/Cadre.vue";
+import Main from "./components/Main.vue";
+import Projets from "./components/Projets.vue";
 
 export default {
   name: "App",
+
   components: {
-    Cadre,
+    Main,
+    Projets,
   },
 };
 </script>

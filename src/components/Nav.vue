@@ -1,6 +1,11 @@
 <template>
   <nav style="height: 16%; z-index: 10" class="w-full flex self-end bg-white">
-    <BoutonNav text="PROJETS" largeur="25%" espacement="0.05em" />
+    <BoutonNav
+      chemin="Projets"
+      text="PROJETS"
+      largeur="25%"
+      espacement="0.05em"
+    />
     <BoutonNav text="CONTACTS" largeur="25%" espacement="0em" />
     <BoutonNav text="+ INFOS" largeur="25%" espacement="0.1em" />
     <BoutonNav text="☼" largeur="12.5%" espacement="0em" />
@@ -16,5 +21,20 @@ export default {
   components: {
     BoutonNav,
   },
+
+  props: {
+    pageCourante: String,
+  },
 };
 </script>
+
+<style scoped>
+.active {
+  top: 0px;
+  left: 0px;
+  box-shadow: none;
+  background: #ececec;
+  border-left: solid black 4px;
+  z-index: -1;
+}
+</style>

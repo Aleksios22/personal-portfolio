@@ -1,11 +1,11 @@
 <template>
-  <button
+  <router-link
+    :to="'/' + chemin"
     :style="{ width: largeur, letterSpacing: espacement }"
-    class="btn text-6xl"
+    class="btn text-6xl text-center flex items-center justify-center"
     style="font-family: barlowBold; height: 95"
+    >{{ text }}</router-link
   >
-    {{ text }}
-  </button>
 </template>
 
 <script>
@@ -15,6 +15,7 @@ export default {
     text: String,
     largeur: String,
     espacement: String,
+    chemin: String,
   },
 };
 </script>
@@ -25,7 +26,6 @@ export default {
   left: 8px;
   transition: all 0.15s linear 0s;
   position: relative;
-  display: inline-block;
   box-shadow: -4px 4px 0px 4px rgb(19, 19, 19);
   border: solid black 4px;
   background: white;

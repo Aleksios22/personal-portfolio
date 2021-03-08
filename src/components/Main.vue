@@ -4,11 +4,11 @@
   >
     <Renderer
       ref="renderer"
-      alpha= true
-      antialias= true
-      mouseMove= true
+      alpha="true"
+      antialias="true"
+      mouseMove="true"
       style="position: absolute"
-      resize= true
+      resize="true"
       width="1000"
     >
       <Camera :position="{ z: 10 }" />

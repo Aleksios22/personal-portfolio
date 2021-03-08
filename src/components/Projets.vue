@@ -1,7 +1,7 @@
 <template>
   <section
     id="projets"
-    class="flex flex-col bg-gray w-screen h-screen justify-center items-center"
+    class="flex flex-col bg-gray w-screen h-screen justify-center items-center overflow-y-hidden"
   >
     <router-link
       :to="'/'"
@@ -24,7 +24,8 @@
       alpha="true"
       antialias="true"
       mouseMove="true"
-      style="position: absolute"
+      style="position: absolute; z-index
+      20"
       resize="true"
       width="1000"
     >

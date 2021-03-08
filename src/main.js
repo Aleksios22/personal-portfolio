@@ -5,11 +5,13 @@ import './index.css'
 import {createWebHistory, createRouter} from 'vue-router'
 import Main from './components/Main.vue'
 import Projets from "./components/Projets.vue"
+import DescProjet from "./components/DescProjet.vue"
 
 
 const routes = [
     { path: '/', name:'Accueil', component: Main },
     { path: '/Projets',  name: 'Projets', component: Projets },
+    // { path: '/github', name: "github", beforeEnter() ,location.href = 'http://github.com' }
    
   ]
 

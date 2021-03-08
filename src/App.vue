@@ -24,6 +24,10 @@ export default {
   src: url("./assets/Fonts/Barlow/Barlow-Bold.ttf");
 }
 @font-face {
+  font-family: barlowMediumItalic;
+  src: url("./assets/Fonts/Barlow/Barlow-MediumItalic.ttf");
+}
+@font-face {
   font-family: barlowBoldItalic;
   src: url("./assets/Fonts/Barlow/Barlow-BoldItalic.ttf");
 }

@@ -1,5 +1,15 @@
 <template>
+  <button
+    v-if="lien === 'false'"
+    :style="{ width: largeur, letterSpacing: espacement }"
+    class="btn text-6xl text-center flex items-center justify-center"
+    style="font-family: barlowBold; height: 95"
+    v-on:click="lumiereMode"
+  >
+    {{ text }}
+  </button>
   <router-link
+    v-else
     :to="'/' + chemin"
     :style="{ width: largeur, letterSpacing: espacement }"
     class="btn text-6xl text-center flex items-center justify-center"
@@ -16,6 +26,13 @@ export default {
     largeur: String,
     espacement: String,
     chemin: String,
+    lien: String,
+  },
+
+  methods: {
+    lumiereMode() {
+      console.log("la noirceur");
+    },
   },
 };
 </script>

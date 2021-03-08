@@ -6,10 +6,10 @@
       largeur="25%"
       espacement="0.05em"
     />
-    <BoutonNav text="CONTACTS" largeur="25%" espacement="0em" />
+    <BoutonNav text="CONTACT" largeur="25%" espacement="0em" />
     <BoutonNav text="+ INFOS" largeur="25%" espacement="0.1em" />
-    <BoutonNav text="☼" largeur="12.5%" espacement="0em" />
-    <BoutonNav text="ANIM" largeur="12.5%" espacement="0em" />
+    <BoutonNav text="☼" largeur="12.5%" espacement="0em" lien="false" />
+    <BoutonNav text="ANIM" largeur="12.5%" espacement="0em" lien="false" />
   </nav>
 </template>
 

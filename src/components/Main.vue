@@ -7,7 +7,7 @@
       alpha="true"
       antialias="true"
       mouseMove="true"
-      style="position: absolute; z-index: 11"
+      style="position: absolute; z-index: 11; pointer-events: none"
       resize="true"
       width="1000"
     >

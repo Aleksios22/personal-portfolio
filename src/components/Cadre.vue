@@ -1,25 +1,8 @@
 <template>
-  <div
+  <div id="cadre"
     style="width: 95%; height: 90%"
-    class="flex flex-col bg-gray-200 border-black border-4 my-5 mx-32 z-10"
+    class="flex flex-col bg-gray-200 border-black border-4 z-10 self-center relative"
   >
-    <Contenu />
-    <Nav />
+     <slot></slot>
   </div>
 </template>
-
-<script>
-import Contenu from "./Contenu.vue";
-import Nav from "./Nav.vue";
-
-export default {
-  name: "Cadre",
-  components: {
-    Contenu,
-    Nav,
-  },
-  data() {
-    return {};
-  },
-};
-</script>

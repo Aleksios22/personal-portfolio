@@ -1,7 +1,7 @@
 <template>
-  <article class="w-6/12 flex flex-col bg-white border-black border-l-4">
+  <article class="w-6/12 h-full right-0 flex flex-col bg-white border-black border-l-4">
     <h1
-      style="font-family: barlowBoldItalic; line-height: 1.15"
+      style="font-family: barlowBoldItalic; line-height: 1.15;"
       class="text-6xl text-left tracking-wider mt-9 ml-9"
     >
       Je m'appelle <br />

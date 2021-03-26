@@ -14,7 +14,6 @@
     :style="{ width: largeur, letterSpacing: espacement }"
     class="btn text-6xl text-center flex items-center justify-center"
     style="font-family: barlowBold; height: 95"
-    @click="obtenirRoute"
     >{{ text }}</router-link
   >
 </template>

@@ -1,10 +1,8 @@
 <template>
   <section
     id="projets"
-    style="height: 84%;
-          background-image:  linear-gradient(#737373 2.1px, transparent 2.1px), linear-gradient(to right, #737373 2.1px, #ffffff 2.1px);
-          background-size: 60px 60px;" 
-    class="w-full h-full flex bg-white">
+    style="height: 84%;"
+    class="w-full h-full bg-white grille container">
   
     <router-link
       :to="'/'"
@@ -21,16 +19,69 @@
         margin-left: -1.8rem;"
     >
     </router-link>
-      <article style="width: 70%" class="flex flex-col">
-        <DescProjet />
-      </article>
-        <ListeProjets />
+
+        <!-- <Carousel :items-to-show="1.5" :wrap-around="true" class="caroussel z-30">
+          <Slide v-for="slide in 10" :key="slide">
+            <div class="carousel__item"><img src="../assets/Images/Projets/tim2020_01.jpg" alt=""></div>
+          </Slide>
+
+          <template #addons>
+            <Navigation />
+          </template>
+        </Carousel> -->
+        <DescProjet class="description" />
+        <ListeProjets class="liste" />
 
   </section>
 </template>
 
 
-<script setup>
-  import DescProjets from '../components/DescProjet.vue';
+<script>
+  import DescProjet from '../components/DescProjet.vue';
   import ListeProjets from '../components/ListeProjets.vue';
+  import 'vue3-carousel/dist/carousel.css';
+  import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
+
+
+
+  export default {
+    name: 'Projets',
+
+    components: {
+      DescProjet,
+      ListeProjets,
+      Carousel,
+      Slide,
+      Pagination,
+      Navigation,
+    },
+
+  }
 </script>
+
+
+<style lang="scss">
+.container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas: "caroussel caroussel liste"
+  "description description liste";
+  grid-template-columns: 120px 2fr 1fr;
+  grid-template-rows: 1fr 250px;
+}
+.container > div {
+  border: 1px dashed #888;
+}
+
+.caroussel {
+  grid-area: caroussel;
+}
+.liste {
+  grid-area: liste;
+}
+.description {
+  grid-area: description;
+}
+
+</style>

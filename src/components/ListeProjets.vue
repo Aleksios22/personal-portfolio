@@ -1,7 +1,6 @@
 <template>
   <ul
-    style="width: 40%"
-    class="h-full bg-white border-black border-l-4 overflow-y-auto block z-10"
+    class="h-full w-full bg-white border-black border-l-4 overflow-y-auto block z-10"
   >
     <li
       v-for="item in projets"

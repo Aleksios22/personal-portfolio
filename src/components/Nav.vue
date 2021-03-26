@@ -1,5 +1,5 @@
 <template>
-  <nav style="height: 16%; z-index: 10" class="w-full flex self-end bg-white">
+  <nav style="height: 16%; z-index: 20" class="w-full flex self-end bg-white">
     <BoutonNav
       chemin="Projets"
       text="PROJETS"

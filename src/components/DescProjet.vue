@@ -1,15 +1,11 @@
 <template>
-  <article
-    style="height: 100%; width: 100%; font-family: IBMPlexMonoSemiBold"
-    class="flex border-black border-t-4 tracking-widest text-lg p-6 z-20 bg-white"
-  >
-    <b><a target="_blank" :href="descProjet[indexProjet].lien">
-      lien
-    </a></b>
-
-    <p
-      >{{descProjet[indexProjet].description}}</p
-    >
+  <article style="font-family: IBMPlexMonoSemiBold"
+    class="w-full h-full border-black border-t-4 tracking-widest text-lg p-6 z-20 bg-white">
+      <a target="_blank" :href="descProjet[indexProjet].lien">
+        <b>lien</b>
+      </a>
+      <br>
+    <p>{{descProjet[indexProjet].description}}</p>
   </article>
 </template>
 

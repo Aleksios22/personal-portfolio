@@ -2,36 +2,35 @@
   <ul
     class="h-full w-full bg-white border-black border-l-4 overflow-y-auto block z-10"
   >
-    <li
-      v-for="item in projets"
-      :key="item.projet"
+    <button
+      v-for="(item, index) in projets"
+      :key="item"
       style="height: 22%; font-family: barlowMediumItalic"
       class="w-full flex justify-start border-b-4 border-black text-6xl pl-7 text-center items-center cursor-pointer"
+      @click="log(index)"
+
     >
-      {{ item.projet }}
-    </li>
+      {{ item.nom }}
+    </button>
   </ul>
 </template>
 
 <script>
+  import imgProjets from '../assets/data/imgProjets.json';
+
 export default {
   name: "ListeProjets",
 
   data() {
     return {
-      projets: [
-        { projet: "Web 01" },
-        { projet: "Web 02" },
-        { projet: "Web 03" },
-        { projet: "Jeu 01" },
-        { projet: "Jeu 02" },
-        { projet: "3D 01 " },
-        { projet: "3D 01 " },
-        { projet: "3D 01 " },
-        { projet: "3D 01 " },
-        { projet: "3D 01 " },
-      ],
+      projets: imgProjets
     };
   },
+
+  methods: {
+    log(index) {
+      this.$emit('choixCourant', index)
+    }
+  }
 };
 </script>

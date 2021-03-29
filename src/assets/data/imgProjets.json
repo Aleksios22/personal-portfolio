@@ -1,30 +1,52 @@
 [
     {
       "id": 1,
-      "src": "../assets/Images/Projets/tim2020_01.jpg"
+      "nom": "Web 01",
+      "src": [
+        "/Images/Projets/tim2020_01.jpg",
+        "/Images/Projets/tim2020_02.jpg",
+        "/Images/Projets/tim2020_03.jpg",
+        "/Images/Projets/tim2020_04.jpg",
+        "/Images/Projets/tim2020_05.jpg",
+        "/Images/Projets/tim2020_06.jpg",
+        "/Images/Projets/tim2020_07.jpg"
+      ] 
     },
     {
       "id": 2,
-      "src": "../assets/Images/Projets/tim2020_02.jpg"
+      "nom": "Web 02",
+      "src": [
+        "/Images/Projets/portfolio_01.png",
+        "/Images/Projets/portfolio_02.png",
+        "/Images/Projets/portfolio_03.png",
+        "/Images/Projets/portfolio_04.png",
+        "/Images/Projets/portfolio_05.png",
+        "/Images/Projets/portfolio_06.png",
+        "/Images/Projets/portfolio_07.png"
+      ]
     },
     {
       "id": 3,
-      "src": "../assets/Images/Projets/tim2020_03.jpg"
+      "nom": "Web03"
     },
     {
     "id": 4,
-    "src": "../assets/Images/Projets/tim2020_04.jpg"
+    "nom": "Web 04"    
     },
     {
     "id": 5,
-    "src": "../assets/Images/Projets/tim2020_05.jpg"
+    "nom": "3D 01"
     },
     {
     "id": 6,
-    "src": "../assets/Images/Projets/tim2020_06.jpg"
+    "nom": "3D 02"
     },
     {
     "id": 7,
-    "src": "../assets/Images/Projets/tim2020_07.jpg"
-    }
-  ]
+    "nom": "Motion Design 01"
+    },
+    {
+      "id": 8,
+      "nom": "Motion Design 02"
+      }
+]

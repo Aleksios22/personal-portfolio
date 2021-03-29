@@ -9,14 +9,16 @@
           <Slide v-for="slide in images" :key="slide.id">
             <div class="carousel__item"><img class="carousel_img" :src="slide" alt=""></div>
           </Slide>
-          <template #addons>
+          <template #addons >
             <Navigation />
           </template>
         </Carousel>
 
-        <DescProjet class="description" />
+        <DescProjet class="description" :indexProjet="indexProjet" />
         <ListeProjets class="liste" 
-                      @choixCourant="choixCourant" />
+                      @choixCourant="choixCourant"
+                       />
+                      
   </section>
 </template>
 
@@ -46,12 +48,15 @@
       data() {
         return {
           images: imgProjets[0].src,
+          indexProjet: 0
         }
       },
 
       methods: {
         choixCourant(choixCourant) {
-          this.images = imgProjets[choixCourant].src
+          this.images = imgProjets[choixCourant].src;
+          this.indexProjet = choixCourant;
+          
         }
       }
     }
@@ -85,16 +90,14 @@
     grid-area: description;
   }
 
+  .carousel__viewport {
+  }
+
   .carousel__item {
-    width: 100%;
-    height: 100%;
-    padding: 20px 50px 20px 50px;
   }
 
   .carousel_img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    padding: 15px;
   }
 
   .carousel__prev,

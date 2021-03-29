@@ -4,31 +4,17 @@
     style="height: 84%;"
     class="w-full h-full bg-white grille container">
   
-    <router-link
-      :to="'/'"
-      :style="{ width: largeur, letterSpacing: espacement }"
-      class="btn text-6xl text-center flex items-center justify-center"
-      style="
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        align-self: flex-start;
-        justify-self: start;
-        z-index: 20;
-        margin-top: -2rem;
-        margin-left: -1.8rem;"
-    >
-    </router-link>
+        <BtnPyramideAcc />
 
-        <!-- <Carousel :items-to-show="1.5" :wrap-around="true" class="caroussel z-30">
-          <Slide v-for="slide in 10" :key="slide">
-            <div class="carousel__item"><img src="../assets/Images/Projets/tim2020_01.jpg" alt=""></div>
+        <Carousel :items-to-show="1.5" :wrap-around="true" class="caroussel z-30">
+          <Slide v-for="(image, index) in images" :key="index.id">
+            <div class="carousel__item"><img src="{{image.src}}" alt=""></div>
           </Slide>
-
           <template #addons>
             <Navigation />
           </template>
-        </Carousel> -->
+        </Carousel>
+
         <DescProjet class="description" />
         <ListeProjets class="liste" />
 
@@ -41,6 +27,9 @@
   import ListeProjets from '../components/ListeProjets.vue';
   import 'vue3-carousel/dist/carousel.css';
   import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
+  import 'vue3-carousel/dist/carousel.css';
+  import BtnPyramideAcc from '../components/BtnPyramideAcc.vue';
+  import imgProjets from '../assets/data/imgProjets.json';
 
 
 
@@ -49,12 +38,25 @@
 
     components: {
       DescProjet,
+      BtnPyramideAcc,
       ListeProjets,
       Carousel,
       Slide,
       Pagination,
       Navigation,
     },
+
+    data() {
+      return {
+        images: imgProjets,
+      }
+    },
+
+    mounted() {
+      console.log(this.images[0].src);
+      
+    }
+
 
   }
 </script>
@@ -82,6 +84,15 @@
 }
 .description {
   grid-area: description;
+}
+
+.carousel__prev,
+.carousel__next {
+  box-sizing: content-box;
+  border: 5px solid white;
+  background-color: black;
+  width: 50px;
+  height: 50px;
 }
 
 </style>

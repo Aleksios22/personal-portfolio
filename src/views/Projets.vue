@@ -2,7 +2,7 @@
   <section
     id="projets"
     style="height: 84%;"
-    class="w-full h-full bg-white grille container">
+    class="w-full h-full bg-white grille container-projets">
         <BtnPyramideAcc />
 
         <Carousel :items-to-show="1.5" :wrap-around="true" class="caroussel z-30">
@@ -63,7 +63,7 @@
 
 
 <style lang="scss">
-  .container {
+  .container-projets {
     display: grid;
     width: 100%;
     height: 100%;
@@ -73,7 +73,7 @@
     grid-template-rows: 1fr 250px;
   }
 
-  .container>div {
+  .container-projets>div {
     border: 1px dashed #888;
   }
 

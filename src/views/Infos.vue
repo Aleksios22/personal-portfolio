@@ -20,8 +20,19 @@
     >
     </router-link>
 
-    <ol class="h-full ListeInfos bg-white border-black border-r-4">
-
+    <ol class="w-full h-full overflow-y-hidden ListeInfos bg-white border-black border-r-4" style="height: 100%">>
+      <li style="height: 32%; font-family: barlowMediumItalic"
+      class="w-full flex justify-start border-b-4 border-black text-6xl pl-7 text-center items-center cursor-pointer">
+        Savoir-faire
+      </li>
+      <li style="height: 32%; font-family: barlowMediumItalic"
+      class="w-full flex justify-start border-b-4 border-black text-6xl pl-7 text-center items-center cursor-pointer">
+        Sur Moi
+      </li>
+      <li style="height: 32%; font-family: barlowMediumItalic"
+      class="w-full flex justify-start border-b-4 border-black text-6xl pl-7 text-center items-center cursor-pointer">
+        Mon CV
+      </li>
     </ol>
 
     <div class="symbolesInfos">

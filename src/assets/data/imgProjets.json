@@ -68,7 +68,7 @@
         "/Images/Projets/recherche_02.png"
       ],
       "lien": ["https://github.com/Aleksios22/MethodologieDeRecherche"],
-      "description": "c okok",
+      "description": "Site très simple décrivant ce qu'est la méthodologie de recherche documentaire + liste de lecture et gallerie d'images gérable. ",
       "techs": "HTML, CSS, JavaScript"
     },
     {
@@ -81,7 +81,7 @@
         "/Images/Projets/locustes_04.png"
       ],
       "lien": ["https://github.com/Aleksios22/JeuLocustes"],
-      "description": "Attention aux locustes de Montréal !",
+      "description": "Petit jeu pour desktop et mobile développé avec la librairie PhaserJS. Le but est de survivre à l'attaque de locustes dans la ville de Montréal le plus longtemps possible. ",
       "techs": "PhaserJS, JavaScript ES6"
     }
 

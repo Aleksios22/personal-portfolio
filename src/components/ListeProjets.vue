@@ -8,6 +8,7 @@
       :key="item"
       style="height: 22%; font-family: barlowMediumItalic"
       class="w-full flex justify-start border-b-4 border-black text-6xl pl-7 text-center items-center cursor-pointer"
+      :class="{selectionne:selectionne === index}"
       @click="log(index)"
 
     >
@@ -24,14 +25,23 @@ export default {
 
   data() {
     return {
-      projets: imgProjets
+      projets: imgProjets,
+      selectionne: 0
     };
   },
 
   methods: {
     log(index) {
-      this.$emit('choixCourant', index)
+      this.$emit('choixCourant', index);
+      this.selectionne = index
     }
   }
 };
 </script>
+
+
+<style lang="scss" scoped>
+  .selectionne {
+    background-color: #ececec;
+  }
+</style>

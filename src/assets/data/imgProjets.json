@@ -65,6 +65,18 @@
       ],
       "lien": ["https://github.com/Aleksios22/MethodologieDeRecherche"],
       "description": "c okok"
+    },
+    {
+      "id": 6,
+      "nom": "Jeu 01",
+      "src": [
+        "/Images/Projets/locustes_01.png",
+        "/Images/Projets/locustes_02.png",
+        "/Images/Projets/locustes_03.png",
+        "/Images/Projets/locustes_04.png"
+      ],
+      "lien": ["https://github.com/Aleksios22/JeuLocustes"],
+      "description": "Attention aux locustes de Montréal !"
     }
 
 ]

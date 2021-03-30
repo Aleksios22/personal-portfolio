@@ -1,7 +1,8 @@
 <template>
   <section
     id="infos"
-    class="flex flex-col bg-gray w-screen h-screen justify-center items-center overflow-y-hidden"
+    style="height: 84%;"
+    class="w-full h-full bg-white grille container"
   >
    <!-- tu pourrais mettre ton link dans la nav commune -->
     <router-link

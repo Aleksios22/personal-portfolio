@@ -1,8 +1,8 @@
 <template>
   <article style="font-family: IBMPlexMonoSemiBold"
     class="w-full h-full border-black border-t-4 tracking-widest text-lg p-6 z-20 bg-white">
-      <a target="_blank" :href="descProjet[indexProjet].lien">
-        <b>lien</b>
+      <a target="_blank" :href="descProjet[indexProjet].lien" style="color: #85B36B">
+        <b>{{descProjet[indexProjet].lien[0]}}</b>
       </a>
       <br>
     <p>{{descProjet[indexProjet].description}}</p>

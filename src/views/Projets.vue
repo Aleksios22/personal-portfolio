@@ -16,8 +16,7 @@
 
         <DescProjet class="description" :indexProjet="indexProjet" />
         <ListeProjets class="liste" 
-                      @choixCourant="choixCourant"
-                       />
+                      @choixCourant="choixCourant"/>
                       
   </section>
 </template>

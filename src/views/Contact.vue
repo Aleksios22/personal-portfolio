@@ -1,7 +1,8 @@
 <template>
   <section
     id="contact"
-    class="flex flex-col bg-gray w-screen h-screen justify-center items-center overflow-y-hidden"
+    style="height: 84%;"
+    class="w-full h-full bg-white grille container"
   >
   <!-- tu pourrais mettre ton link dans la nav commune -->
     <router-link
@@ -20,6 +21,8 @@
       "
     >
     </router-link>
+
+
 
     <!-- include le contenu de la page de contact ici ou dans un composant autre -->
   </section>

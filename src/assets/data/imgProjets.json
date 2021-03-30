@@ -44,23 +44,27 @@
       "description": "Wowow la culture chinoise yes"
     },
     {
-    "id": 4,
-    "nom": "Web 04"    
+      "id": 4,
+      "nom": "Web 04",
+      "src": [
+        "/Images/Projets/laChoppe_01.png",
+        "/Images/Projets/laChoppe_02.png",
+        "/Images/Projets/laChoppe_03.png",
+        "/Images/Projets/laChoppe_04.png",
+        "/Images/Projets/laChoppe_05.png"
+      ],
+      "lien": ["https://github.com/Aleksios22/refonteLaChoppeACafe"],
+      "description": "Oh le café!"
     },
     {
-    "id": 5,
-    "nom": "3D 01"
-    },
-    {
-    "id": 6,
-    "nom": "3D 02"
-    },
-    {
-    "id": 7,
-    "nom": "Motion Design 01"
-    },
-    {
-      "id": 8,
-      "nom": "Motion Design 02"
-      }
+      "id": 5,
+      "nom": "Web 05",
+      "src": [
+        "/Images/Projets/recherche_01.png",
+        "/Images/Projets/recherche_02.png"
+      ],
+      "lien": ["https://github.com/Aleksios22/MethodologieDeRecherche"],
+      "description": "c okok"
+    }
+
 ]

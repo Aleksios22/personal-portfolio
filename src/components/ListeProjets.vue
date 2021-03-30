@@ -1,6 +1,7 @@
 <template>
   <ul
-    class="h-full w-full bg-white border-black border-l-4 overflow-y-auto block z-10"
+    class=" w-full bg-white border-black border-l-4 overflow-y-auto block z-10"
+    style="height: 95%"
   >
     <button
       v-for="(item, index) in projets"

@@ -5,7 +5,8 @@
         <b>{{descProjet[indexProjet].lien[0]}}</b>
       </a>
       <br>
-    <p>{{descProjet[indexProjet].description}}</p>
+    <p class="mt-3.5">{{descProjet[indexProjet].description}}</p>
+    <p class="mt-3.5 text-base">Technologies utilisée : <i>{{descProjet[indexProjet].techs}}</i> </p>
   </article>
 </template>
 

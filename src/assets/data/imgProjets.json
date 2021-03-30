@@ -12,7 +12,8 @@
         "/Images/Projets/tim2020_07.jpg"
       ],
       "lien": ["https://github.com/Aleksios22/tim2020"],
-      "description": "Ceci est un teste 1"
+      "description": "Refonte du site web du programme d'intégration multimédia à Maisonneuve, réalisé en équipe. Équipé d'un CMS et développé avec Vue.js.",
+      "techs": " Vue.js, HTML5, SCSS, javascript, tailwind, uiKit, Storyblok."
     },
     {
       "id": 2,
@@ -27,7 +28,8 @@
         "/Images/Projets/portfolio_07.png"
       ],
       "lien":["https://github.com/Aleksios22/portfolioVite.js"],
-      "description": "Ceci est un teste 2"
+      "description": "Mon site personnel où je vous parle de mes projets et de ce que j'aime faire :)",
+      "techs": "VueJS, HTML, SCSS, JavaScript ES6, ViteJS, TailwindCSS,  TroisJS, ThreeJS"
     },
     {
       "id": 3,
@@ -41,7 +43,8 @@
         "/Images/Projets/quizChine_06.png"
       ],
       "lien": ["https://github.com/Aleksios22/QuizCultureChinoise"],
-      "description": "Wowow la culture chinoise yes"
+      "description": "Un quiz sur la culture chinoise avec 2 niveaux de difficulté, responsive et génération aléatoire des questions, réalisé en équipe.",
+      "techs": "HTML, CSS, JavaScript"
     },
     {
       "id": 4,
@@ -54,7 +57,8 @@
         "/Images/Projets/laChoppe_05.png"
       ],
       "lien": ["https://github.com/Aleksios22/refonteLaChoppeACafe"],
-      "description": "Oh le café!"
+      "description": "Refonte fictive du site web de la Choppe À Café, maison de café et de thé dans la ville de Saint-Jérôme. Mobile-first et responsive.",
+      "techs": "HTML, CSS, JavaScript, Bootstrap"
     },
     {
       "id": 5,
@@ -64,7 +68,8 @@
         "/Images/Projets/recherche_02.png"
       ],
       "lien": ["https://github.com/Aleksios22/MethodologieDeRecherche"],
-      "description": "c okok"
+      "description": "c okok",
+      "techs": "HTML, CSS, JavaScript"
     },
     {
       "id": 6,
@@ -76,7 +81,8 @@
         "/Images/Projets/locustes_04.png"
       ],
       "lien": ["https://github.com/Aleksios22/JeuLocustes"],
-      "description": "Attention aux locustes de Montréal !"
+      "description": "Attention aux locustes de Montréal !",
+      "techs": "PhaserJS, JavaScript ES6"
     }
 
 ]

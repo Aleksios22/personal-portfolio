@@ -20,14 +20,37 @@
     >
     </router-link>
 
-    <ul class="ListeSociale bg-white h-full border-black border-r-4">
-
+    <ul class="h-full w-full flex justify-around p-20 ListeSociale bg-white border-black border-r-4">
+      <li class="w-2/6">
+        <img class="w-24 box-content  p-4 cursor-pointer" src="/Images/Icons/png/004-email.png" alt=""
+          @click="actif = 'Email'" :class="{actif:actif === 'Email'}">
+      </li>
+      <li class="w-2/6">
+        <img class="w-24 box-content  p-4 cursor-pointer" src="/Images/Icons/png/001-telephone.png" alt=""
+          @click="actif = 'telephone'" :class="{actif:actif === 'telephone'}">
+      </li>
+      <li class="w-2/6">
+        <img class="w-24 box-content  p-4 cursor-pointer" src="/Images/Icons/png/012-placeholder.png" alt=""
+          @click="actif = 'localisation'" :class="{actif:actif === 'localisation'}">
+      </li>
     </ul>
 
   </section>
 </template>
 
-<script setup>
+<script>
+import { onMounted } from 'vue'
+  export default {
+    name: "Contact",
+
+
+  data(){
+        return{
+          actif: null 
+        }
+      }
+
+  }
 </script>
 
 
@@ -41,5 +64,10 @@
       "ListeSociale ."
       "ListeSociale .";
   }
-  .ListeSociale { grid-area: ListeSociale; }
+  .ListeSociale {
+     grid-area: ListeSociale; 
+  }
+  .actif {
+    border: solid black 4px;
+  }
 </style>

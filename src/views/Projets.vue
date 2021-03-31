@@ -89,12 +89,6 @@
     grid-area: description;
   }
 
-  .carousel__viewport {
-  }
-
-  .carousel__item {
-  }
-
   .carousel_img {
     padding: 15px;
   }

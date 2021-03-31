@@ -54,7 +54,12 @@ export default {
       Tetrahedron.rotation.x += 0.01;
       Tetrahedron.rotation.y += 0.005;
       this.$route.path != "/" ? Tetrahedron.scale.set( 1, 1, 1 ) : Tetrahedron.scale.set( 3.8, 3.8, 3.8 );
-      this.$route.path != "/" ? Tetrahedron.position.set( -9, 4, 0 ) : Tetrahedron.position.set( -7, 3, 0 )
+      this.$route.path != "/" ? Tetrahedron.position.set( -9, 4, 0 ) : Tetrahedron.position.set( -7, 3, 0 );
+      if (screen.width <= 1000) {
+          Tetrahedron.scale.set( 3.2, 3.2, 3.2 );
+          Tetrahedron.position.set( -1.5, 4, 0 );
+      } 
+      
   });
   },
 // } 

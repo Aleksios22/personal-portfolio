@@ -13,7 +13,7 @@
       ],
       "lien": ["https://github.com/Aleksios22/tim2020"],
       "description": "Refonte du site web du programme d'intégration multimédia à Maisonneuve, réalisé en équipe. Équipé d'un CMS et développé avec Vue.js.",
-      "techs": " Vue.js, HTML5, SCSS, javascript, tailwind, uiKit, Storyblok."
+      "techs": " Vue.js, HTML5, SCSS, javascript, tailwind, Figma, uiKit, Storyblok."
     },
     {
       "id": 2,
@@ -29,7 +29,7 @@
       ],
       "lien":["https://github.com/Aleksios22/portfolioVite.js"],
       "description": "Mon site personnel où je vous parle de mes projets et de ce que j'aime faire :)",
-      "techs": "VueJS, HTML, SCSS, JavaScript ES6, ViteJS, TailwindCSS,  TroisJS, ThreeJS"
+      "techs": "VueJS, HTML, SCSS, JavaScript ES6, AdobeXD, ViteJS, TailwindCSS,  TroisJS, ThreeJS"
     },
     {
       "id": 3,

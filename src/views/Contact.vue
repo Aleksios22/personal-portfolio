@@ -24,8 +24,8 @@
           <input class="text-gray-500 p-1 mt-1 mb-3 border-black border-2" type="text" id="lname" name="lname"
             value="...@mail.com"><br>
           <label for="message">Message:</label><br>
-          <textarea class="h-36 w-full border-black border-2 mt-1" name="message" id="" cols="30" rows="10"></textarea>
-          <input class="p-2 cursor-pointer mt-1 border-black border-2 bg-white" type="submit" value="Envoyer">
+          <textarea class="h-36 w-full text-gray-500 border-black border-2 mt-1" name="message" id="" cols="30" rows="10"></textarea>
+          <input id="btnEnvoyer" class="p-2 cursor-pointer mt-1 border-black border-2 bg-white" type="submit" value="Envoyer">
         </form>
       </div>
       <div v-else-if="selection == 'telephone'" class="border-black border-2 p-3 text-6xl bg-white">
@@ -97,6 +97,10 @@
 
   img {
     max-width: none
+  }
+
+  #btnEnvoyer:hover {
+    background-color: #aeda97;
   }
 
 </style>

@@ -1,23 +1,19 @@
 <template>
-  <section
-    id="projets"
-    style="height: 84%;"
-    class="w-full h-full bg-white grille container-projets">
-        <BtnPyramideAcc />
+  <section id="projets" style="height: 84%;" class="w-full h-full bg-white grille container-projets">
+    <BtnPyramideAcc />
 
-        <Carousel :items-to-show="1.5" :wrap-around="true" class="caroussel z-30">
-          <Slide v-for="slide in images" :key="slide.id">
-            <div class="carousel__item"><img class="carousel_img" :src="slide" alt=""></div>
-          </Slide>
-          <template #addons >
-            <Navigation />
-          </template>
-        </Carousel>
+    <Carousel :items-to-show="1.5" :wrap-around="true" class="caroussel z-30">
+      <Slide v-for="slide in images" :key="slide.id">
+        <div class="carousel__item"><img class="carousel_img" :src="slide" alt=""></div>
+      </Slide>
+      <template #addons>
+        <Navigation />
+      </template>
+    </Carousel>
 
-        <DescProjet class="description" :indexProjet="indexProjet" />
-        <ListeProjets class="liste" 
-                      @choixCourant="choixCourant"/>
-                      
+    <DescProjet class="description" :indexProjet="indexProjet" />
+    <ListeProjets class="liste" @choixCourant="choixCourant" />
+
   </section>
 </template>
 
@@ -26,7 +22,12 @@
   import DescProjet from '../components/DescProjet.vue';
   import ListeProjets from '../components/ListeProjets.vue';
   import 'vue3-carousel/dist/carousel.css';
-  import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
+  import {
+    Carousel,
+    Slide,
+    Pagination,
+    Navigation
+  } from 'vue3-carousel';
   import 'vue3-carousel/dist/carousel.css';
   import BtnPyramideAcc from '../components/BtnPyramideAcc.vue';
   import imgProjets from '../assets/data/imgProjets.json';
@@ -34,31 +35,31 @@
   export default {
     name: 'Projets',
 
-      components: {
-        DescProjet,
-        BtnPyramideAcc,
-        ListeProjets,
-        Carousel,
-        Slide,
-        Pagination,
-        Navigation,
-      },
+    components: {
+      DescProjet,
+      BtnPyramideAcc,
+      ListeProjets,
+      Carousel,
+      Slide,
+      Pagination,
+      Navigation,
+    },
 
-      data() {
-        return {
-          images: imgProjets[0].src,
-          indexProjet: 0
-        }
-      },
+    data() {
+      return {
+        images: imgProjets[0].src,
+        indexProjet: 0
+      }
+    },
 
-      methods: {
-        choixCourant(choixCourant) {
-          this.images = imgProjets[choixCourant].src;
-          this.indexProjet = choixCourant;
-          
-        }
+    methods: {
+      choixCourant(choixCourant) {
+        this.images = imgProjets[choixCourant].src;
+        this.indexProjet = choixCourant;
+
       }
     }
+  }
 </script>
 
 
@@ -88,6 +89,10 @@
   .description {
     grid-area: description;
   }
+
+  .carousel__viewport {}
+
+  .carousel__item {}
 
   .carousel_img {
     padding: 15px;

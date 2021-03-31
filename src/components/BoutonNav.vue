@@ -1,8 +1,9 @@
 <template>
   <button
     v-if="lien === 'false'"
-    :style="{ width: largeur, letterSpacing: espacement }"
-    class="btn text-6xl text-center flex items-center justify-center"
+    :style="{letterSpacing: espacement }"
+    class="text-xl lg:text-6xl text-center flex items-center justify-center btn"
+    :class="largeur"
     style="font-family: barlowBold; height: 95"
     @click="lumiereMode"
   >
@@ -12,7 +13,7 @@
     v-else
     :to="'/' + chemin"
     :style="{ width: largeur, letterSpacing: espacement }"
-    class="btn text-6xl text-center flex items-center justify-center"
+    class=" text-xl lg:text-6xl text-center flex items-center justify-center btn "
     style="font-family: barlowBold; height: 95"
     >{{ text }}</router-link
   >

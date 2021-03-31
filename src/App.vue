@@ -39,4 +39,12 @@
   background-size: 40px 40px;
 }
 
+::-moz-selection { /* Code for Firefox */
+  background: #aeda97;
+}
+
+::selection {
+  background: #aeda97;
+}
+
 </style>

@@ -1,8 +1,7 @@
 <template>
   <section 
   id="accueil" 
-  style="height: 84%;"
-  class="w-full flex flex-row-reverse bg-white grille">
+  class="w-full h-lg flex flex-col-reverse lg:flex-row-reverse bg-white grille">
     <PanPresentation />
   </section>
 </template>

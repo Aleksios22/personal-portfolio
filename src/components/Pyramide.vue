@@ -57,12 +57,6 @@ export default {
       this.$route.path != "/" ? Tetrahedron.position.set( -9, 4, 0 ) : Tetrahedron.position.set( -7, 3, 0 )
   });
   },
-
-//       watch:{
-//       $route (to, from){
-//           this.$route.path != "/" ? this.grosseurPyramide = { x: 2, y: 2, z: 2 } : this.grosseurPyramide = { x: 3.8, y: 3.8, z: 3.8 };
-//           this.Tetrahedron.scale.set( 6, 6, 6 );
-//       }
 // } 
 };
 </script>

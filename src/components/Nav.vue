@@ -1,13 +1,13 @@
 <template>
-  <nav style="z-index: 20" class="w-full h-sm flex self-end bg-white">
-    <BoutonNav 
+  <nav style="z-index: 20" class="w-full h-11 flex self-end bg-white lg:h-16">
+    <BoutonNav
       class="hidden lg:flex"
       chemin="Projets"
       text="PROJETS"
       largeur="25%"
       espacement="0.05em"
     />
-    <BoutonNav 
+    <BoutonNav
       class="hidden lg:flex"
       chemin="Contact"
       text="CONTACT" 
@@ -21,12 +21,12 @@
       espacement="0.1em" />
     <BoutonNav 
       text="☼" 
-      largeur="w-1/2" 
+      largeur="w-1/2 lg:w-12.5"
       espacement="0em" 
       lien="false" />
     <BoutonNav 
       text="EN" 
-      largeur="w-1/2" 
+      largeur="w-1/2 lg:w-12.5" 
       espacement="0em" 
       lien="false" />
   </nav>

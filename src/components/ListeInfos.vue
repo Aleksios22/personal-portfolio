@@ -12,7 +12,7 @@
                     @click="log(1)">
             Sur Moi
         </li>
-        <a href="https://flowcv.io/resume/feedback/7zIS1nyjNMSB" target="_blank"
+        <a href="https://app.flowcv.io/resume-feedback/XvDDd_ulOLOQgazgdFEsZ" target="_blank"
         style="height: 34%; font-family: barlowMediumItalic"
             class="w-full flex justify-start border-b-4 border-black text-6xl pl-7 text-center items-center cursor-pointer">
             Mon CV
